@@ -1,13 +1,7 @@
 import os
 from threading import Thread
-from flask import ( 
-    Flask, Blueprint, flash, g, 
-    redirect, render_template, 
-    request, url_for
-)
-from flask_mail import (
-    Mail, Message
-)
+from flask import (Flask, redirect, render_template, request)
+from flask_mail import (Mail, Message )
 
 def create_app(test_config=None):
     mail = Mail()

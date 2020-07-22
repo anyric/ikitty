@@ -39,7 +39,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #000;
+  background: #f72;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -664,7 +664,7 @@ h6 {
   padding: 6px 20px;
   font-size: 12px;
   line-height: 20px;
-  color: #f72;
+  color: #fff;
   border-radius: 50px;
   text-transform: uppercase;
   background: #000;
@@ -675,7 +675,7 @@ h6 {
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
   background: #000;
-  color: #fff;
+  color: #f72;
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -779,7 +779,7 @@ h6 {
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
-  color: #fff;
+  color: #f72;
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover {
