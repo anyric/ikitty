@@ -182,8 +182,9 @@ h6 {
 #intro {
   width: 100%;
   position: relative;
-  background: 	#4d4d4d;
-  padding: 200px 0 160px 0;
+  background: url("../img/intro.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
 }
 
 #intro .intro-img {
@@ -194,6 +195,12 @@ h6 {
 #intro .intro-info {
   width: 50%;
   float: left;
+  background: #000;
+  opacity: 0.6;
+  transition: 0.4s;
+  padding-left: 20px;
+  padding-top: 15px;
+  border-radius: 10px;
 }
 
 #intro .intro-info h2 {
@@ -531,7 +538,6 @@ h6 {
 #services .icon {
   position: absolute;
   left: -10px;
-  /* top: calc(50% - 32px); */
 }
 
 #services .icon i {
@@ -866,6 +872,10 @@ h6 {
   overflow: hidden;
 }
 
+/* #team .member img {
+  width: 200px;
+  height: 200px;
+} */
 #team .member .member-info {
   opacity: 0;
   display: -webkit-box;
@@ -1139,7 +1149,6 @@ h6 {
   color: #fff;
   font-weight: 400;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #footer .footer-top .footer-info p {
