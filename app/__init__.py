@@ -7,7 +7,7 @@ def create_app(test_config=None):
     mail = Mail()
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-    app.config['MAIL_SERVER']='smtp.gmail.com'
+    app.config['MAIL_SERVER']= os.getenv('MAIL_SERVER')
     app.config['MAIL_PORT'] = 465
     app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
     app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
@@ -60,7 +60,7 @@ def create_app(test_config=None):
                 msg.body=message
                 thr = Thread(target=send_async_email, args=[app, msg])
                 thr.start()
-                return redirect(request.host_url + '#contact')
+                return redirect(request.host_url + '#footer')
 
         return render_template('index.html')
 
